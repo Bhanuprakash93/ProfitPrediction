@@ -4,4 +4,4 @@ numpy
 joblib
 plotly
 matplotlib
-sklearn
+scikit-learn
