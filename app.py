@@ -10,8 +10,10 @@ best_SVR = joblib.load('best_SVR_model.pkl')
 scalary = joblib.load('scalary.pkl')
 scalarx = joblib.load('scalarx.pkl')
 
-# Load the data
-Corp_W_SF = pd.read_csv("Corp_W_SF_data.csv")
+# # Load the data
+# Corp_W_SF = pd.read_csv("C:/Users/Bhanu prakash/OneDrive - Vijaybhoomi International School/Desktop/11_07_24_Streamlit/Corp_W_SF_data.csv")
+# Access secrets from secrets.toml
+Corp_W_SF = st.secrets["data"]["file_path"]
 
 # Define functions
 def fn_GRID_Data_6vars(pmin, pmax, dmMin, dmMax, GMRate, DMPromo, DMOther, PromoPenetration, OtherPenetration, EconomicIndicator, SF, bestNLM):
